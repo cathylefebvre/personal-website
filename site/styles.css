@@ -4,20 +4,20 @@ body {
     font-size: 18px;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
-    color: #333;
+    background-color: white;
+    color: black;
 }
 
 /* Header */
 header {
-    background-color: #0b5394;
-    color: white;
-    padding: 2rem;
+    background-color: #e6faff;
+    color: #3263eb;
+    padding: 1rem;
 }
 
 header h1 {
     margin: auto;
-    color: #333;
+    color: #02123e;
     text-align: center;
     font-size: 2.2rem;
 }
@@ -43,8 +43,8 @@ h1 {
 }
 
 h2 {
-    color: #0b5394;
-    border-bottom: 2px solid #0b5394;
+    color: #123aa8;
+    border-bottom: 2px solid #123aa8;
     padding-bottom: 0.3rem;
 }
 
@@ -52,8 +52,8 @@ h2 {
     display: inline-block;
     padding: 0.5rem 0.9rem;
     border-radius: 6px;
-    background-color: #ffffff;
-    color: #0b5394;
+    background-color: #02123e;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
@@ -62,13 +62,13 @@ h2 {
 .footer {
     text-align: center;
     padding: 1.5rem;
-    color: #777;
+    color: #02123e;
     font-size: 0.9rem;
 }
 
 .footer img {
-    height: auto;
-    width: 30px;
+    height: 40px;
+    width: auto;
 }
 
 .footer a {
@@ -88,29 +88,14 @@ h2 {
     justify-content: space-between;
 }
 
-.logo {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border: 2px solid #ffffff;
-}
-
-/* Desktop nav links */
-.nav-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
 .nav-links a:hover {
     text-decoration: underline;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    padding: 10px;
 }
 
 /* Hamburger button */
@@ -136,11 +121,32 @@ h2 {
 .change .bar1 {
     transform: translate(0, 8px) rotate(-45deg);
 }
+
 .change .bar2 {
     opacity: 0;
 }
+
 .change .bar3 {
     transform: translate(0, -8px) rotate(45deg);
+}
+
+/* ---------------------- */
+/* DESKTOP NAV BEHAVIOR   */
+/* ---------------------- */
+
+@media (min-width: 701px) {
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 25px;
+    }
+
+    .nav-links a {
+        color: #02123e;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
 }
 
 
@@ -169,6 +175,8 @@ h2 {
 
     .nav-links a {
         padding: 0.5rem 0;
+        text-decoration: none;
+        color: white;
     }
 
     /* When menu is open (JS adds .nav-open) */
