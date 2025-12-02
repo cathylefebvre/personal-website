@@ -58,6 +58,20 @@ h2 {
     font-weight: 600;
 }
 
+.position-line {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.position-line .left {
+    text-align: left;
+}
+
+.position-line .right {
+    text-align: right;
+}
+
 /* Footer */
 .footer {
     text-align: center;
@@ -183,6 +197,17 @@ h2 {
     .nav-links.nav-open {
         display: flex;
     }
+
+    .position-line {
+        flex-direction: column;
+        align-items: flex-start;
+        /* left align everything */
+    }
+
+    .position-line .right {
+        text-align: left;
+    }
+
 }
 
 /* ---------------------- */
