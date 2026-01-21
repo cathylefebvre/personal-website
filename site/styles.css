@@ -1,3 +1,13 @@
+:root {
+    --dark-background: #033f74;
+    --title: #b7b7b7;
+    --background: #e6faff;
+    --header: #123aa8;
+    --body: #242323;
+    --icons: #02123e;
+    --logo-font: #3263eb;
+}
+
 /* Global Style */
 body {
     font-family: Calibri, sans-serif;
@@ -10,21 +20,7 @@ body {
 
 /* Header */
 header {
-    background-color: #e6faff;
-    color: #3263eb;
-    padding: 1rem;
-}
-
-header h1 {
-    margin: auto;
-    color: #02123e;
-    text-align: center;
-    font-size: 2.2rem;
-}
-
-header p {
-    margin: auto;
-    font-size: 1.1rem;
+    background-color: var(--background);
 }
 
 /* Layout */
@@ -39,12 +35,15 @@ section {
 }
 
 h1 {
+    margin: auto;
+    color: var(--logo-font);
+    font-size: 3rem;
     text-align: center;
 }
 
 h2 {
-    color: #123aa8;
-    border-bottom: 2px solid #123aa8;
+    color: var(--header);
+    border-bottom: 2px solid var(--header);
     padding-bottom: 0.3rem;
 }
 
@@ -52,7 +51,7 @@ h2 {
     display: inline-block;
     padding: 0.5rem 0.9rem;
     border-radius: 6px;
-    background-color: #02123e;
+    background-color: var(--dark-background);
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -76,7 +75,7 @@ h2 {
 .footer {
     text-align: center;
     padding: 1.5rem;
-    color: #02123e;
+    color: var(--icons);
     font-size: 0.9rem;
 }
 
@@ -166,9 +165,8 @@ h2 {
 .viewer {
     width: 100%;
     height: auto;
-    border: 1px solid #e6e6e6;
-    border-radius: 6px;
-    background: #fff;
+    border: 1px solid white;
+    background: white;
 }
 
 /* ------------------------- */
@@ -183,7 +181,10 @@ h2 {
     }
 
     .nav-links a {
-        color: #02123e;
+        color: white;
+        background-color: var(--dark-background);
+        padding: 0.5rem 0.9rem;
+        border-radius: 6px;
         text-decoration: none;
         font-weight: 500;
     }
@@ -191,7 +192,6 @@ h2 {
     .viewer {
         min-height: 600px;
     }
-
 }
 
 
@@ -203,7 +203,7 @@ h2 {
 
     .hamburger {
         display: flex;
-        background-color: #033f74;
+        background-color: var(--dark-background);
         padding: 1rem;
         margin-top: 0.75rem;
         border-radius: 6px;
@@ -212,7 +212,7 @@ h2 {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #033f74;
+        background-color: var(--dark-background);
         padding: 1rem;
         margin-top: 0.75rem;
         border-radius: 6px;
