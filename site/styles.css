@@ -112,7 +112,7 @@ h2 {
     padding: 10px;
 }
 
-/* Hamburger button */
+/* Hamburger button (for mobile only) */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -144,9 +144,36 @@ h2 {
     transform: translate(0, -8px) rotate(45deg);
 }
 
+
 /* ---------------------- */
-/* DESKTOP NAV BEHAVIOR   */
+/* PDF DISPLAY            */
 /* ---------------------- */
+
+
+.pdf-wrapper {
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.pdf-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.viewer {
+    width: 100%;
+    height: auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* ------------------------- */
+/* DESKTOP SPECIFIC BEHAVIOR */
+/* ------------------------- */
 
 @media (min-width: 701px) {
     .nav-links {
@@ -160,12 +187,17 @@ h2 {
         text-decoration: none;
         font-weight: 500;
     }
+
+    .viewer {
+        min-height: 600px;
+    }
+
 }
 
 
-/* ---------------------- */
-/* MOBILE NAV BEHAVIOR    */
-/* ---------------------- */
+/* ------------------------ */
+/* MOBILE SPECIFIC BEHAVIOR */
+/* ------------------------ */
 
 @media (max-width: 700px) {
 
@@ -213,31 +245,4 @@ h2 {
         padding: 5px;
     }
 
-}
-
-/* ---------------------- */
-/* PDF DISPLAY            */
-/* ---------------------- */
-
-
-.pdf-wrapper {
-    max-width: 1000px;
-    margin: 1.5rem auto;
-    padding: 0 1rem;
-}
-
-.pdf-actions {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.viewer {
-    width: 100%;
-    height: auto;
-    min-height: 600px;
-    border: 1px solid #e6e6e6;
-    border-radius: 6px;
-    background: #fff;
 }

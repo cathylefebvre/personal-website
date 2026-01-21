@@ -36,7 +36,7 @@
       <section aria-labelledby="resume-heading">
         <h2 id="resume-heading">My Resume</h2>
 
-        <!-- Primary PDF embed using <object>. Fallback shows helpful instructions -->
+        <!-- Primary PDF embed using <object>. Fallback shows alt instructions -->
         <object
           class="viewer"
           data="assets/resume.pdf"
@@ -45,7 +45,6 @@
         >
           <!-- If <object> not supported, use an <iframe> fallback -->
           <iframe class="viewer" src="assets/resume.pdf" title="Resume PDF">
-            <!-- Final fallback content for browsers that cannot display PDFs inline -->
             <div class="fallback">
               <p>
                 It looks like your browser cannot display PDFs inline. You can
@@ -57,15 +56,6 @@
             </div>
           </iframe>
         </object>
-
-        <noscript>
-          <div class="fallback" style="margin-top: 1rem">
-            <p>
-              JavaScript appears to be disabled. Please download the resume:
-              <a href="assets/resume.pdf" download>Download resume (PDF)</a>
-            </p>
-          </div>
-        </noscript>
       </section>
     </main>
 
